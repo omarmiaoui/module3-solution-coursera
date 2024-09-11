@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food, LLC</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="module 3 solution.css">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">Food, LLC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#chicken">Chicken</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#beef">Beef</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sushi">Sushi</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Heading -->
+  <div class="container text-center">
+    <h1>Our Menu</h1>
+  </div>
+
+  <!-- Sections -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <section id="chicken">
+          <h3>Chicken</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <a href="#menu" class="back-to-top">Back To Top</a>
+        </section>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <section id="beef">
+          <h3>Beef</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <a href="#menu" class="back-to-top">Back To Top</a>
+        </section>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <section id="sushi">
+          <h3>Sushi</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <a href="#menu" class="back-to-top">Back To Top</a>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Smooth Scrolling JS -->
+  <script>
+    $(document).ready(function() {
+      // Smooth scrolling for navigation and back-to-top links
+      $('a[href^="#"]').on('click', function(event) {
+        event.preventDefault();
+        var target = this.hash;
+        $('html, body').animate({
+          scrollTop: $(target).offset().top
+        }, 800);
+      });
+    });
+  </script>
+
+</body>
+</html>
